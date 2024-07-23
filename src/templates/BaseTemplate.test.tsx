@@ -1,7 +1,7 @@
 import { render, screen, within } from '@testing-library/react';
 import { NextIntlClientProvider } from 'next-intl';
 
-import messages from '@/locales/en.json';
+import messages from '@/locales/pt.json';
 
 import { BaseTemplate } from './BaseTemplate';
 
@@ -9,7 +9,7 @@ describe('Base template', () => {
   describe('Render method', () => {
     it('should have 3 menu items', () => {
       render(
-        <NextIntlClientProvider locale="en" messages={messages}>
+        <NextIntlClientProvider locale="pt" messages={messages}>
           <BaseTemplate
             leftNav={
               <>
@@ -31,7 +31,7 @@ describe('Base template', () => {
 
     it('should have a link to support creativedesignsguru.com', () => {
       render(
-        <NextIntlClientProvider locale="en" messages={messages}>
+        <NextIntlClientProvider locale="pt" messages={messages}>
           <BaseTemplate leftNav={<li>1</li>}>{null}</BaseTemplate>
         </NextIntlClientProvider>,
       );

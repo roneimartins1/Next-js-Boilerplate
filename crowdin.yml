@@ -19,9 +19,9 @@ files: [
     {
       #
       # Source files filter
-      # e.g. "/resources/en/*.json"
+      # e.g. "/resources/pt/*.json"
       #
-      "source": "/src/locales/en.json",
+      "source": "/src/locales/pt.json",
 
       #
       # Where translations will be placed

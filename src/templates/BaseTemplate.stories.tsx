@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/test';
 import { NextIntlClientProvider } from 'next-intl';
 
-import messages from '@/locales/en.json';
+import messages from '@/locales/pt.json';
 
 import { BaseTemplate } from './BaseTemplate';
 
@@ -17,7 +17,7 @@ const meta = {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <NextIntlClientProvider locale="en" messages={messages}>
+      <NextIntlClientProvider locale="pt" messages={messages}>
         <Story />
       </NextIntlClientProvider>
     ),
